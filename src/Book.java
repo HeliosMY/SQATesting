@@ -3,9 +3,10 @@ public class Book {
     int id;
     public Book() {
         id = getNewID();
+        System.out.println(id);
     }
 
     static int getNewID() {
-        return test++;
+        return ++test;
     }
 }
